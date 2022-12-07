@@ -1,0 +1,87 @@
+body {
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+  }
+  .container{
+    /* width: 100%; */
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .heading{
+    font-size: 5.5rem;
+    
+  }
+  .form input{
+    width:45%;
+    border-bottom: 3px solid blue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    outline: none;
+  }
+  .form input::placeholder{
+    color:rgb(11, 11, 248);
+  }
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  .form{
+    display:flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .btn{
+    outline: none;
+    border:none;
+    background-color: white;
+    color:grey;
+    font-size: 20px;
+  }
+  li{
+    text-align: left;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    width:85%;
+   font-size:20px;
+  }
+  .check{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width:55%;
+    text-align: left;
+    margin-left:21%;
+  }
+  .cb:checked+li{
+    text-decoration: line-through;
+  }
+  input[type=checkbox] {
+    accent-color: red;
+  }
+  .sign{
+display: flex;  
+cursor: pointer;
+display:none;
+}
+li:hover+.sign{
+display: block;
+}
+.sign:hover{
+    display: block;
+}
+
+  
+ 
+  
