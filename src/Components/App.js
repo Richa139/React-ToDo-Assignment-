@@ -20,7 +20,7 @@ function App() {
   function deleteitem(id) {
     setitems((previtem) => {
       return previtem.filter((item, index) => {
-        return index != id;
+        return index !== id;
       });
     });
   }
